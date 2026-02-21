@@ -1,0 +1,21 @@
+pins configuration 
+
+V3v= to (+side ) power rail
+Gnd to (- side ) 
+
+PIR 
+Left = (- side).    Orange
+Middle = pin D4.   Red 
+Right = (+ side )   brown
+
+SERVO MOTOR 
+
+left = (- side ).            Brown
+Middle = (+ side )      red 
+Right = pin  D18.        Yellow
+
+BUZZER 
+
+Long leg = pin D2
+
+Short leg = (- side)
