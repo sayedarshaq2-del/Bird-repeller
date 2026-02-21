@@ -1,0 +1,17 @@
+C++
+void loop() {
+int motionDetected = digitalRead(PIR_PIN); // Sampling the environment
+if (motionDetected == HIGH) {
+// The "Action" implementation
+for (int i = 0; i < 5; i++) {
+digitalWrite(BUZZER_PIN, HIGH); // Acoustic deterrent ON
+birdScarer.write(160); // Mechanical swing clockwise
+delay(200); // Duration of the scaredigitalWrite(BUZZER_PIN, LOW); // Acoustic deterrent OFF
+birdScarer.write(20); // Mechanical swing counter-clockwise
+delay(200);
+}
+// Return to neutral state
+birdScarer.write(90);
+delay(5000); // The "Refractory Period" implementation
+}
+}
